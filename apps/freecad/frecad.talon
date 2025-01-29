@@ -5,7 +5,7 @@ look {user.freecad_view}: key(freecad_view)
 
 create {user.freecad_geometry}: insert(freecad_geometry)
 
-constrain {user.freecad_constraints}: insert(freecad_constraints)
+constrain | constraint {user.freecad_constraints}: insert(freecad_constraints)
 
 varset | variable: insert("VarSet.")
 

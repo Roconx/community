@@ -2,6 +2,7 @@ list: user.freecad_constraints
 -
 dimension: d
 point: c
+coincident: c
 horizontal: a
 vertical: a
 parallel: p
