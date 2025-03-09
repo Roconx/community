@@ -1,4 +1,4 @@
-from talon import Context, Module, actions, ctrl, settings, ui
+from talon import Context, Module, actions, ctrl, settings, ui, scope
 
 mod = Module()
 ctx = Context()
@@ -130,6 +130,10 @@ class UserActions:
             and is_using_eye_tracker
             and not actions.tracking.control_zoom_enabled()
         )
+
+        modes = scope.get("mode")
+        if "user.reading" in modes and "command" not in modes:
+            return
 
         if should_click:
             ctrl.mouse_click(button=0, hold=16000)

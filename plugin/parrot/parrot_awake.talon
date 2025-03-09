@@ -1,4 +1,6 @@
 not mode: sleep
+and not mode: user.flow
+and not mode: user.reading
 -
 
 parrot(cluck):
