@@ -6,3 +6,4 @@ point: gy
 arc: ga
 circle: gc
 rectangle: gr
+polygon: gpp

@@ -1,3 +1,5 @@
+not mode: user.reading
+-
 parrot(rree):
     # close zoom if open
     user.zoom_close()
