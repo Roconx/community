@@ -14,3 +14,7 @@ class Actions:
     def toggle_flow_mode():
         "Toggles flow mode"
         actions.key("fn-space")
+
+    def flow_paste_last():
+        "Pastes last flow transcription"
+        actions.key("cmd-ctrl-v")

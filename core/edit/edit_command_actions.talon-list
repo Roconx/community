@@ -5,9 +5,9 @@ select: select
 go before: goBefore
 go after: goAfter
 
-copy: copyToClipboard
+grab: copyToClipboard
 cut: cutToClipboard
-paste: pasteFromClipboard
-paste to: pasteFromClipboard
+put: pasteFromClipboard
+put to: pasteFromClipboard
 
 clear: delete

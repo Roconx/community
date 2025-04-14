@@ -27,3 +27,4 @@ settings():
     user.code_public_variable_formatter = "PUBLIC_CAMEL_CASE"
 
 state var: insert("var ")
+state await: insert("await ")

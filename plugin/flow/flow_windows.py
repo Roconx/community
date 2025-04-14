@@ -13,4 +13,8 @@ os: windows
 class Actions:
     def toggle_flow_mode():
         "Toggles flow mode"
-        actions.key("fn-space")
+        actions.key("ctrl-super-;")
+
+    def flow_paste_last():
+        "Pastes last flow transcription"
+        actions.key("shift-alt-z")

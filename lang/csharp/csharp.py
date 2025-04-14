@@ -80,17 +80,17 @@ class UserActions:
         actions.auto_insert(" != null")
 
     def code_state_if():
-        actions.user.insert_between("if(", ")")
+        actions.user.insert_between("if (", ")")
 
     def code_state_else_if():
-        actions.user.insert_between("else if(", ")")
+        actions.user.insert_between("else if (", ")")
 
     def code_state_else():
         actions.insert("else\n{\n}\n")
         actions.key("up")
 
     def code_state_switch():
-        actions.user.insert_between("switch(", ")")
+        actions.user.insert_between("switch (", ")")
 
     def code_state_case():
         actions.insert("case \nbreak;")
@@ -105,12 +105,14 @@ class UserActions:
         actions.edit.word_left()
         actions.key("space")
         actions.edit.left()
+        actions.edit.right()
+        actions.edit.right()
 
     def code_state_go_to():
         actions.auto_insert("go to ")
 
     def code_state_while():
-        actions.user.insert_between("while(", ")")
+        actions.user.insert_between("while (", ")")
 
     def code_state_return():
         actions.auto_insert("return ")

@@ -42,17 +42,17 @@ indent [more]: edit.indent_more()
 (indent less | out dent): edit.indent_less()
 
 # Copy
-copy that: edit.copy()
+grab this: edit.copy()
 
 # Cut
 cut that: edit.cut()
 
 # Paste
-(pace | paste) that: edit.paste()
-(pace | paste) enter:
+put this: edit.paste()
+put enter:
     edit.paste()
     key(enter)
-paste match: edit.paste_match_style()
+put match: edit.paste_match_style()
 
 # Duplication
 clone that: edit.selection_clone()
